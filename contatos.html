@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contatos - Bom de Prato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bom de Prato</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="conteudo1.html" class="link">Culinária Brasileira</a></li>
+                <li><a href="conteudo2.html" class="link">Culinária Italiana</a></li>
+                <li><a href="conteudo3.html" class="link">Culinária Asiática</a></li>
+                <li><a href="contatos.html" class="link">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-itens">
+            <h2>Entre em Contato</h2>
+                <p>Deixe suas sugestões ou perguntas para que possamos sempre melhorar!</p>
+        </div>
+        <form id="contact-form" action="enviar.php" method="post">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Assunto:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bom de Prato. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
